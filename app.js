@@ -10,6 +10,12 @@ const posts = [
     {title: 'Post Two', body: 'This is post two'}
 ];
 
+function createPost(post){
+    setTimeout(() => {
+        posts.push(post);
+    }, 2000);
+}
+
 function getPosts() {
     setTimeout(() => {
         posts.forEach(function (post) {
